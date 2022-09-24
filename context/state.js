@@ -10,16 +10,17 @@ export function UserWrapper({ children }) {
   // const [, setUserId] = useState("");
 
   useEffect(() => {
+    const userName = getCookie("userName");
     setUserId(getCookie("userId"));
     setSecretKey(getCookie("secretKey"));
-    setUserName(getCookie("userName"));
+    setUserName(userName ? userName : "");
   }, []);
 
   const logout = () => {
     deleteCookie("userId");
     deleteCookie("userName");
     deleteCookie("secretKey");
-    setUserId("");
+    setUserId(undefined);
     setUserName("");
     setSecretKey("");
   };

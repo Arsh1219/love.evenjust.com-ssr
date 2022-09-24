@@ -25,7 +25,6 @@ export const createUser = async (saveUserId, saveSecretKey, name) => {
 export const getCrushes = async (key) => {
   if (key) {
     const result = await axios.get(`/getCrushes/${key}`);
-    console.log(result);
     return result ? result.data : [];
   }
 };

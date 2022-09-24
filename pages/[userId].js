@@ -21,7 +21,7 @@ const UserId = () => {
   }, [userIdFromUrl, userId, router]);
 
   return (
-    <>
+    <div className="text-center bg-gray-200 h-full min-h-screen">
       {userId !== userIdFromUrl && (
         <>
           <SEO
@@ -31,7 +31,7 @@ const UserId = () => {
           <PostCrush requestorId={userIdFromUrl} />
         </>
       )}
-    </>
+    </div>
   );
 };
 
