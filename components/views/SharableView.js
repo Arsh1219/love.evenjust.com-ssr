@@ -51,7 +51,9 @@ export const SharableView = ({ userId }) => {
         <SharableIcon
           color="#1cb06d"
           icon={<WhatsAppIcon />}
-          href={`https://api.whatsapp.com/send?text=❤ *Amazing Astrology Love Calculator* ❤ %0D%0ACalculate Love Percentage Between You and Your Partner 😻😻%0D%0A‼👇👇👇👇👇👇‼ %0D%0A ${"hello"}`}
+          href={`https://api.whatsapp.com/send?text=❤ *Amazing Astrology Love Calculator* ❤ %0D%0ACalculate Love Percentage Between You and Your Partner 😻😻%0D%0A‼👇👇👇👇👇👇‼ %0D%0A ${
+            url.split("#")[0]
+          }${userId}`}
         />
         <SharableIcon
           color="linear-gradient(45deg,#f09433 0,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)"
