@@ -39,16 +39,18 @@ export default function Home() {
   return (
     <>
       {userId === undefined && (
-        <div className="text-center bg-gray-200 h-full min-h-screen">
-          <SEO />
-          <AddInTop />
-          {/* <Banner href="https://song.cooo.me/select?ref=secret" /> */}
+        <Layout>
+          <div className="text-center bg-gray-200 h-full min-h-screen">
+            <SEO />
+            <AddInTop />
+            {/* <Banner href="https://song.cooo.me/select?ref=secret" /> */}
 
-          <div className="w-full max-w-3xl mx-auto px-3 p-2 mt-3 bg-white border border-gray-600 rounded-xlg">
-            <StartView onUserSaved={() => setUserId("1234")} />
+            <div className="w-full max-w-3xl mx-auto px-3 p-2 mt-3 bg-white border border-gray-600 rounded-xlg">
+              <StartView onUserSaved={() => setUserId("1234")} />
+            </div>
+            <AddInBottom />
           </div>
-          <AddInBottom />
-        </div>
+        </Layout>
       )}
     </>
   );
