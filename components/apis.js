@@ -1,10 +1,3 @@
-import {
-  saveUserId,
-  saveSecretKey,
-  getUserName,
-  getSecretKey,
-} from "./cookies";
-
 const AXIOS = require("axios");
 const axios = AXIOS.create({
   baseURL: "https://9m8pqnm3we.execute-api.ap-south-1.amazonaws.com/api/",

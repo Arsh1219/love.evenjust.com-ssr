@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useUserContext } from "../context/state";
 import { PostCrush } from "../components/PostCrush";
+import { Footer } from "../components/Footer";
 import SEO from "../components/SEO";
 
 const UserId = () => {
@@ -29,6 +30,7 @@ const UserId = () => {
             description="Know love percentage between you and your partner"
           />
           <PostCrush requestorId={userIdFromUrl} />
+          <Footer />
         </>
       )}
     </div>

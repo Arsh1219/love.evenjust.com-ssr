@@ -6,7 +6,9 @@ export class StartView extends React.Component {
   render() {
     return (
       <>
-        <h1 className="text-2xl my-3 text-red-700 font-semibold">2022 Love Calculator</h1>
+        <h1 className="text-2xl my-3 text-red-700 font-semibold">
+          2022 Love Calculator
+        </h1>
         <Heading label="Want to know who He/She really likes? " />
         <div className="mt-2">
           <SubHeading label="Trick them into telling you" />

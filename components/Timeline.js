@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 
 import { SubHeading } from "../components";
-import { getUserName } from "./cookies";
 import { getCrushes } from "./apis";
 import { useUserContext } from "../context/state";
 

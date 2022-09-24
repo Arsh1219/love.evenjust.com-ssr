@@ -10,13 +10,6 @@ export const SharableView = ({ userId }) => {
   const url = useURL();
   const { userName } = useUserContext();
   const router = useRouter();
-  // const url = `${window.location.protocol}//${
-  //   window.location.hostname
-  // }/${userId}`;
-
-  // const timelineUrl = `${window.location.protocol}//${
-  //   window.location.hostname
-  // }?view=friendCrush`;
 
   return (
     <>

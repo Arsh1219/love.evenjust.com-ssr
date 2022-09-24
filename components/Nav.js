@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
 import { Logout } from "./Logout";
 import { useUserContext } from "../context/state";
 

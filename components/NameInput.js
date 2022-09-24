@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { SubHeading, SmallButton, Heading } from "./";
-import { getUserName, setUserName } from "./cookies";
 import { createUser } from "./apis";
 import { showToolTip } from "./utils.js";
 import { FaKissWinkHeart } from "react-icons/fa";
