@@ -6,7 +6,7 @@ export const Banner = () => {
 
 const Banner1 = () => {
   return (
-    <div className="mx-1 md:mx-4 hidden">
+    <div className="mx-1 md:mx-4">
       <div className="max-w-2xl bg-red-600 mx-auto p-2 font-bold text-white font-sans rounded-lg antialiased leading-relaxed">
         Know What your Friends Think About You!
         <a

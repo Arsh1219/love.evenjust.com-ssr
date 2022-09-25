@@ -13,13 +13,14 @@ export const Nav = () => {
 
       <div className="justify-center text-white flex bg-red-600">
         <div className="flex flex-1 justify-center items-center">
-          <div className="flex-1 flex justify-end items-center content-center">
+          <div className="flex-1 flex justify-end items-center content-center ml-5">
             <img
               onClick={() =>
                 (window.location.href = "https://love.evenjust.com/")
               }
               className="h-8 my-2 cursor-pointer"
               src="/cooo4.svg"
+              alt="evenjust logo"
             />
           </div>
           <div className="flex-1 text-right">{userId && <Logout />}</div>
