@@ -22,7 +22,7 @@ module.exports = {
           "./pages/**/*.{js,jsx,ts,tsx}",
           "./components/**/*.{js,jsx,ts,tsx}",
         ],
-        // defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+        defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: {
           standard: [/bm$/, "bm-burger-bars"],
           deep: [/bm$/],
