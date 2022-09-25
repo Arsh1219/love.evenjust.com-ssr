@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { SubHeading, Heading } from ".";
 import { postFriendCrush } from "./apis";
@@ -12,6 +12,12 @@ export const PostCrush = (props) => {
   const [processed, setProcessed] = useState(false);
 
   const router = useRouter();
+
+  useEffect(() => {
+    if (processed) {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [processed]);
 
   const onClick = async () => {
     setProcessing(true);

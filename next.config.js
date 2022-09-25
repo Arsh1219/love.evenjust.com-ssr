@@ -5,7 +5,13 @@ const withPurgeCss = require("next-purgecss");
 
 // module.exports = withBundleAnalyzer({});
 
-module.exports = withCss(withPurgeCss());
+module.exports = withCss(
+  withPurgeCss({
+    purgeCss: {
+      safelist: () => ["bm-burger-bars"],
+    },
+  })
+);
 
 const nextConfig = {
   reactStrictMode: true,

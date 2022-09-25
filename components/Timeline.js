@@ -36,7 +36,7 @@ export const Timeline = (props) => {
           Important:- Once your Friend Enter name of Lover, Results will be
           shown here. Please reload the page to see latest results
         </div>
-        <div className="w-full max-w-3xl mx-auto p-1 border-gray-600 rounded-lg" id="crushes">
+        <div className="w-full max-w-3xl mx-auto p-1 border-gray-600 rounded-lg">
           {crushes?.length > 0 ? (
             <ShowCrushData crushes={crushes} />
           ) : (

@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-full max-w-3xl mx-auto px-3 p-2 mt-3 bg-white border border-gray-600 rounded-xlg">
           <SharableView userId={userId} />
         </div>
-        <div className="mt-4">
+        <div className="mt-4" id="friendcrush">
           <Timeline />
         </div>
         <AddInBottom />

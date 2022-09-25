@@ -35,7 +35,7 @@ export const Logout = () => {
             Yes
           </Button>
           <Button
-            onClick={() => this.setModalVisibility(false)}
+            onClick={() => setShowModal(false)}
             className="bg-danger ml-4 px-4"
           >
             No

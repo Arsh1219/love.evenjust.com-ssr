@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { Heading, SubHeading, SmallButton } from "../index";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -10,6 +10,14 @@ export const SharableView = ({ userId }) => {
   const url = useURL();
   const { userName } = useUserContext();
   const router = useRouter();
+
+  useEffect(() => {
+    if (url.includes("#crushes")) {
+      const element = document.getElementById("friendcrush");
+      router.push(`/#friendcrushes`);
+      element && element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [url]);
 
   return (
     <>
@@ -37,7 +45,10 @@ export const SharableView = ({ userId }) => {
       <div className="my-3 mx-auto w-full md:w-2/3">
         <SmallButton
           label="Check who your friends love"
-          onClick={() => router.push(`/#crushes`)}
+          onClick={() => {
+            router.push(`/#crushes`);
+            router.reload(window.location.pathname);
+          }}
         />
       </div>
       <div className="my-1 flex">
