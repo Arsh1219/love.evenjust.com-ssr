@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { UserWrapper } from "../context/state";
-import Script from "next/Script";
+import Script from "next/script";
 import Head from "next/head";
 import { pageview } from "../lib/gtm";
 import "../styles/index.css";
