@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         src={`https://www.googletagmanager.com/gtag/js?id=UA-242082267-2`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="google adsense">
         {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
