@@ -35,10 +35,10 @@ export default function Home() {
 
   return (
     <>
+      <SEO />
       {userId === undefined && (
         <Layout>
           <div className="text-center bg-gray-200 h-full min-h-screen">
-            <SEO />
             <AddInTop />
             {/* <Banner href="https://song.cooo.me/select?ref=secret" /> */}
 
