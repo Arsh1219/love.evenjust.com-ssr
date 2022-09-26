@@ -1,6 +1,10 @@
 import React from "react";
 
 export class AddInTop extends React.Component {
+  componentDidMount() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
   render() {
     return (
       <div className="mt-2">
@@ -17,6 +21,10 @@ export class AddInTop extends React.Component {
 }
 
 export class AddInBottom extends React.Component {
+  componentDidMount() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
   render() {
     return (
       <ins
