@@ -12,6 +12,7 @@ export class StartView extends React.Component {
         <Heading label="Want to know who He/She really likes? " />
         <div className="mt-2">
           <SubHeading label="Trick them into telling you" />
+          <NameInput onUserSaved={this.props.onUserSaved} />
         </div>
         <div className="my-4 mx-2 md:mx-5 text-gray-700">
           <div className="bullets">
@@ -35,7 +36,6 @@ export class StartView extends React.Component {
             </ol>
           </div>
         </div>
-        <NameInput onUserSaved={this.props.onUserSaved} />
       </>
     );
   }

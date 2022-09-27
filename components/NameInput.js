@@ -6,7 +6,6 @@ import { FaKissWinkHeart } from "react-icons/fa";
 import { useUserContext } from "../context/state";
 
 export const NameInput = () => {
-  
   const {
     userName,
     setUserName,
@@ -45,7 +44,7 @@ export const NameInput = () => {
   }
 
   return (
-    <div className="mx-5 text-left">
+    <div className="mx-5 my-3 text-left">
       <SubHeading label="Your Name:" />
       <input
         type="text"
