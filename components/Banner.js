@@ -11,7 +11,7 @@ const Banner1 = () => {
         Know What your Friends Think About You!
         <a
           className="hover:text-gray-400"
-          href="https://secret.cooo.me/"
+          href="https://secret.evenjust.com/"
           style={{ textDecoration: "underline" }}
         >
           Click here
@@ -28,7 +28,7 @@ const Banner2 = () => {
         Know How well your friends know you? !
         <a
           className="hover:text-gray-400"
-          href="https://secret.cooo.me/"
+          href="https://secret.evenjust.com/"
           style={{ textDecoration: "underline" }}
         >
           Click here

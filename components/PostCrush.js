@@ -74,7 +74,7 @@ export const PostCrush = (props) => {
   return (
     <div
       className="w-full h-full p-3 pb-5 overflow-scroll"
-      style={{ background: 'url("https://love.cooo.me/bg3.jpeg")' }}
+      style={{ background: 'url("https://love.evenjust.com/bg3.jpeg")' }}
     >
       <AddInTop />
       <div className="md:max-w-2xl mx-auto">
