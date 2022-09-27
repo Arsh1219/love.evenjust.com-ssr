@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
           crossorigin="anonymous"
         />
       </Head>
+      <Script src="https://love.evenjust.com/larapush_script_cb39b.js"></Script>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=UA-242082267-2`}
