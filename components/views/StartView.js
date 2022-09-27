@@ -7,7 +7,7 @@ export class StartView extends React.Component {
     return (
       <>
         <h1 className="text-2xl my-3 text-red-700 font-semibold">
-          2022 Love Calculator
+          Love Calculator Prank
         </h1>
         <Heading label="Want to know who He/She really likes? " />
         <div className="mt-2">
