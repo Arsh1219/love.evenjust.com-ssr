@@ -4,7 +4,11 @@ import React from "react";
 export const Footer = () => {
   return (
     <div className="mt-2 text-md p-3">
-      <p> © {new Date().getFullYear()} - love.evenjust.com - Love Calculator</p>
+      <p>
+        {" "}
+        © {new Date().getFullYear()} - love.evenjust.com - Love Calculator |{" "}
+        <a href="https://yesnospin.com/">Yes No Wheel Online</a>
+      </p>
       <div className="mt-2 text-md flex justify-center p-2">
         <Link href="/">
           <a className="px-2 border-r-2">HomePage</a>
